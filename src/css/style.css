@@ -8,6 +8,10 @@
     --purple: #AF52DE;
     --yellow: #FC0;
     --dark-jade: #004732;
+    --bg: linear-gradient(124deg, #E7FFF5, #E0FFEE70.23%);
+    --indigo: #5856D6;
+    --mint: #00C7BE;
+    --grayscale: #393939;
 }
 
 body {
@@ -16,6 +20,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     width: 100vw;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -116,4 +124,77 @@ header {
 
 #signup-button a:hover {
     color: var(--Grays-Black);
+}
+
+#hero {
+    display: flex;
+    height: 40.0625rem;
+    padding: 0rem 7.5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: var(--bg);
+
+}
+
+#hero h1 {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    letter-spacing: -0.04rem;
+    align-self: stretch;
+    width: 40vw;
+    margin-top: 15vh;
+    position: absolute;
+}
+
+#jade {
+    color: var(--jade);
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    letter-spacing: -0.04rem;
+}
+
+#hero p {
+    color: var(--grayscale);
+    font-family: "Darker Grotesque";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.015rem;
+    width: 30vw;
+    margin-top: -14vh;
+}
+
+#hero a {
+    display: flex;
+    position: absolute;
+    height: 2.25rem;
+    padding: 1.25rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--jade);
+    color: var(--foundation-jade);
+}
+
+.hero a:hover {}
+
+.image {
+    display: block;
+    top: 0;
+    margin-top: 48rem;
+    width: 50vw;
+}
+
+.image img {
+    border-radius: 50%;
 }
