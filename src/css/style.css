@@ -61,6 +61,10 @@ header {
     text-decoration: none;
 }
 
+.nav-item ul li a:hover {
+    color: var(--orange);
+}
+
 #login-button {
     display: flex;
     width: 7.5rem;
@@ -84,6 +88,8 @@ header {
     letter-spacing: -0.025rem;
 }
 
+#login-button a:hover {}
+
 #signup-button {
     display: flex;
     width: 7.5rem;
@@ -104,4 +110,8 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.025rem;
+}
+
+#signup-button a:hover {
+    color: var(--Grays-Black);
 }
