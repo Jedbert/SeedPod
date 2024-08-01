@@ -402,14 +402,25 @@ header {
 
 #about-seedpod h2 {
     display: flex;
-    color: var(--smokyblack);
-    font-family: "Darker Grotesque";
-    font-size: 1.75rem;
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    align-self: stretch;
     justify-content: center;
+}
+
+#about-seedpod p {
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.03rem;
 }
 
 .card {
