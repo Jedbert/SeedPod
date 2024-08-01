@@ -15,12 +15,14 @@
     --green: #34C759;
 }
 
+
 body {
     font-family: 'Darker Grotesque', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 a {
@@ -131,16 +133,15 @@ header {
 
 #hero {
     display: flex;
-    height: 40.0625rem;
+    height: 110vh;
     padding: 0rem 7.5rem;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
     background: var(--bg);
     z-index: 1000;
+    position: relative;
 }
-
-
 
 #hero h1 {
     color: var(--Grays-Black);
@@ -151,8 +152,8 @@ header {
     line-height: 90%;
     letter-spacing: -0.04rem;
     align-self: stretch;
-    width: 40vw;
-    margin-top: 15vh;
+    width: 60%;
+    margin-top: 10vh;
     position: absolute;
 }
 
@@ -175,14 +176,14 @@ header {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.015rem;
-    width: 30vw;
-    margin-top: -13vh;
+    width: 24vw;
+    margin-top: calc(-19%);
 }
 
 #hero a {
     display: flex;
     position: absolute;
-    margin-top: 3rem;
+    margin-top: -12%;
     height: 2.25rem;
     padding: 1.25rem 1.5rem;
     justify-content: center;
@@ -200,9 +201,9 @@ header {
 #image {
     display: flex;
     top: 0;
-    margin-top: 5rem;
+    margin-top: 12%;
     width: 50vw;
-    margin-left: 45vw;
+    margin-left: 53vw;
 
 }
 
@@ -215,7 +216,7 @@ header {
 #idea {
     position: absolute;
     width: 5vw;
-    margin-top: -14vh;
+    margin-top: -17vh;
     margin-left: 13vw;
 }
 
@@ -256,7 +257,7 @@ header {
     justify-content: center;
     padding: .5em;
     padding-left: .5em;
-    margin-top: -0.3em;
+    margin-top: 0.3em;
     margin-left: .1vw;
     color: var(--Grays-Black);
     font-family: Inter;
@@ -292,3 +293,258 @@ header {
     font-weight: 400;
     line-height: normal;
 }
+
+#invest {
+    position: absolute;
+    width: 5vw;
+    margin-top: 50.2vh;
+    margin-left: 19vw;
+}
+
+#invest p {
+    display: flex;
+    border-radius: 0.68181rem;
+    border: 0.2px solid #FFF;
+    background: var(--indigo);
+    backdrop-filter: blur(12px);
+    width: 7.2rem;
+    justify-content: center;
+    padding: .5em;
+    padding-left: .5em;
+    margin-top: -8.3em;
+    margin-left: -1vw;
+    color: var(--Grays-Black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#valuation {
+    position: absolute;
+    width: 5vw;
+    margin-top: 9vh;
+    margin-left: 24.5vw;
+}
+
+#valuation p {
+    display: flex;
+    border-radius: 0.68181rem;
+    border: 0.2px solid #FFF;
+    background: var(--mint);
+    backdrop-filter: blur(12px);
+    width: 7.2rem;
+    justify-content: center;
+    padding: .5em;
+    padding-left: .5em;
+    margin-top: -0.9em;
+    margin-left: -1vw;
+    color: var(--Grays-Black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Media Query */
+@media only screen and (min-width: 1025px) and (aspect-ratio: 16/9) {
+    header {
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #image {
+        width: 50vw;
+        margin-left: 45vw;
+    }
+
+    #jade {
+        font-size: 3rem;
+    }
+
+    #hero p {
+        margin-top: -1.9rem;
+    }
+
+    #idea p,
+    #growth p,
+    #implement p,
+    #invest p,
+    #valuation p {
+        font-size: 1rem;
+    }
+
+    #growth p {
+        margin-top: 1vh;
+    }
+
+    #valuation {
+        margin-left: 43vw;
+        position: absolute;
+    }
+
+    #valuation p {
+        margin-top: -0.3vh;
+    }
+
+    #implement p,
+    #invest p {
+        margin-top: -19.3vh;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: -20vh;
+        margin-left: 13vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (aspect-ratio: 16/9) {
+    header {
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+        height: 87vh;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #hero p {
+        margin-top: -11%;
+        width: 23%;
+    }
+
+    #hero a {
+        margin-top: -3%;
+    }
+
+    #image {
+        width: 40vw;
+        margin-top: 5%;
+        margin-left: 50vw;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: -13vh;
+        margin-left: 13vw;
+    }
+
+    #idea p {
+        margin-top: -0.4vh;
+        font-size: 1rem;
+        width: 10vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+
+    #invest {
+        position: absolute;
+        width: 5vw;
+        margin-top: 40vh;
+    }
+
+    #invest p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 6.5vw;
+    }
+
+    #implement {
+        position: absolute;
+        width: 5vw;
+        margin-top: 42vh;
+    }
+
+    #implement p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 9vw;
+    }
+
+    #growth p {
+        font-size: 1rem;
+        width: 5vw;
+        margin-top: 2%;
+    }
+
+    #valuation p {
+        font-size: 1rem;
+        width: 7vw;
+    }
+}
+
+/* @media only screen and (min-width: 1920px) and (aspect-ratio: 16/9) {
+    header {
+        display: none;
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+    }
+
+    #hero h1 {
+        font-size: 4rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #image {
+        width: 40vw;
+        margin-left: 60vw;
+    }
+
+    #idea p,
+    #growth p,
+    #implement p,
+    #invest p,
+    #valuation p {
+        font-size: 1.2rem;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: 90vh;
+        margin-left: 13vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+} */
