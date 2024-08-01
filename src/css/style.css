@@ -12,6 +12,7 @@
     --indigo: #5856D6;
     --mint: #00C7BE;
     --grayscale: #393939;
+    --green: #34C759;
 }
 
 body {
@@ -94,6 +95,7 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.025rem;
+    padding-bottom: 0.5em;
 }
 
 #login-button a:hover {
@@ -120,6 +122,7 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.025rem;
+    padding-bottom: 0.5em;
 }
 
 #signup-button a:hover {
@@ -134,8 +137,10 @@ header {
     align-items: center;
     align-self: stretch;
     background: var(--bg);
-
+    z-index: 1000;
 }
+
+
 
 #hero h1 {
     color: var(--Grays-Black);
@@ -162,6 +167,7 @@ header {
 }
 
 #hero p {
+    position: absolute;
     color: var(--grayscale);
     font-family: "Darker Grotesque";
     font-size: 1rem;
@@ -170,12 +176,13 @@ header {
     line-height: 120%;
     letter-spacing: 0.015rem;
     width: 30vw;
-    margin-top: -14vh;
+    margin-top: -13vh;
 }
 
 #hero a {
     display: flex;
     position: absolute;
+    margin-top: 3rem;
     height: 2.25rem;
     padding: 1.25rem 1.5rem;
     justify-content: center;
@@ -186,15 +193,102 @@ header {
     color: var(--foundation-jade);
 }
 
-/* .hero a:hover {} */
-
-.image {
-    display: block;
-    top: 0;
-    margin-top: 48rem;
-    width: 50vw;
+#hero a:hover {
+    color: var(--Grays-Black);
 }
 
-.image img {
+#image {
+    display: flex;
+    top: 0;
+    margin-top: 5rem;
+    width: 50vw;
+    margin-left: 45vw;
+
+}
+
+#image img {
+    display: flex;
+    position: relative;
     border-radius: 50%;
+}
+
+#idea {
+    position: absolute;
+    width: 5vw;
+    margin-top: -14vh;
+    margin-left: 13vw;
+}
+
+#idea p {
+    display: flex;
+    border-radius: 0.68181rem;
+    border: 0.2px solid #FFF;
+    background: var(--orange);
+    backdrop-filter: blur(12px);
+    width: 9.2rem;
+    justify-content: center;
+    padding: .5em;
+    padding-left: .5em;
+    margin-top: -0.3em;
+    margin-left: -1vw;
+    color: var(--Grays-Black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#growth {
+    position: absolute;
+    width: 5vw;
+    margin-top: 3vh;
+    margin-left: -3vw;
+}
+
+#growth p {
+    display: flex;
+    border-radius: 0.68181rem;
+    border: 0.2px solid #FFF;
+    background: var(--green);
+    backdrop-filter: blur(12px);
+    width: 6rem;
+    justify-content: center;
+    padding: .5em;
+    padding-left: .5em;
+    margin-top: -0.3em;
+    margin-left: .1vw;
+    color: var(--Grays-Black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#implement {
+    position: absolute;
+    width: 5vw;
+    margin-top: 52vh;
+    margin-left: 3vw;
+}
+
+#implement p {
+    display: flex;
+    border-radius: 0.68181rem;
+    border: 0.2px solid #FFF;
+    background: var(--yellow);
+    backdrop-filter: blur(12px);
+    width: 9.2rem;
+    justify-content: center;
+    padding: .5em;
+    padding-left: .5em;
+    margin-top: -7.9em;
+    margin-left: -1vw;
+    color: var(--Grays-Black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
