@@ -88,7 +88,9 @@ header {
     letter-spacing: -0.025rem;
 }
 
-#login-button a:hover {}
+#login-button a:hover {
+    color: var(--Grays-Black);
+}
 
 #signup-button {
     display: flex;
