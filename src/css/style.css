@@ -54,8 +54,6 @@ header {
 
 .nav-item ul li a {
     color: var(--Grays-Black);
-    leading-trim: both;
-    text-edge: cap;
     font-family: "Darker Grotesque";
     font-size: 1.375rem;
     font-style: normal;
