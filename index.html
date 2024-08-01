@@ -45,7 +45,7 @@
         <a href="#get-started" class="get-started">Get Started <img
                 src="node_modules/bootstrap-icons/icons/arrow-right-short.svg" alt=""></a>
         <div id="image">
-            <img src="src/images/hero-image.svg" alt="Hero Image">
+            <img id="hero-image" src="src/images/hero-image.svg" alt="Hero Image">
             <span id="idea"><img src="src/images/bulb.png" alt="" class="idea">
                 <p>Idea Submission</p>
             </span>
@@ -63,11 +63,100 @@
             </span>
         </div>
     </section>
+    <section class="partners">
+        <img src="src/images/avca.png" aria-label="AVCA" alt="AVCA" class="partner-names">
+        <img src="src/images/bill-melinda.png" aria-label="Bill & Melinda Gates" alt="Bill & Melinda Gates"
+            class="partner-names">
+        <img src="src/images/techstar.png" aria-label="techstars" alt="techstars" class="partner-names">
+        <img src="src/images/boi.png" aria-label="Bank of
+            Industry" alt="Bank of Industry" class="partner-names">
+    </section>
+
+    <section id="about-seedpod">
+        <h2>What We Do</h2>
+        <p class="tagline">
+            Here is a brief description of SeedPod is all about
+        </p>
+        <div class="card">
+            <div class="about-card">
+                <img src="src/images/chain.svg" alt="" class="chain">
+                <h3>
+                    Connect Innovators with Investors
+                </h3>
+                <p>
+                    We provide a platform where innovators can showcase their ideas to potential investors and
+                    facilitate
+                    investor matching
+                    with suitable opportunities, helping startups secure the necessary funds.
+                </p>
+            </div>
+            <div class="about-card">
+                <img src="src/images/connect.svg" alt="" class="connect">
+                <h3>Facilitate Industry-Specific Discussions and Collaboration</h3>
+                <p>Our platform hosts industry-specific discussion forums, enabling users to share insights, collaborate
+                    on
+                    initiatives,
+                    and stay informed about the latest trends and innovation.</p>
+            </div>
+            <div class="about-card">
+                <img src="src/images/analysis.svg" alt="" class="analysis">
+                <h3>
+                    Support Personal and Professional Development
+                </h3>
+                <p>
+                    We offer mentorship programs connecting users with experienced mentors, provide resources for
+                    business
+                    planning and
+                    pitching, to help users grow professionally and personally
+
+                </p>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+
+    <script>
+        const image = document.getElementById('image');
+
+        function handleMouseMove(e) {
+            const rect = image.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            // Get mouse position
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // Calculate the angle from the center of the image to the mouse position
+            const angle = Math.atan2(mouseY - centerY, mouseX - centerX) * (180 / Math.PI);
+
+            // Calculate scale based on angle
+            const scale = Math.abs(Math.sin(angle * Math.PI / 180)) * 0.3 + 1;
+
+            // Apply the transformation
+            image.style.transform = `scale(${scale})`;
+        }
+
+        function handleMouseEnter() {
+            document.addEventListener('mousemove', handleMouseMove);
+        }
+
+        function handleMouseLeave() {
+            document.removeEventListener('mousemove', handleMouseMove);
+            // Reset the scale when the mouse leaves
+            image.style.transform = 'scale(1)';
+        }
+
+        // Add event listeners
+        image.addEventListener('mouseenter', handleMouseEnter);
+        image.addEventListener('mouseleave', handleMouseLeave);
+
+
+    </script>
 </body>
 
 </html>
