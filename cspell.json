@@ -2,8 +2,14 @@
     "version": "0.2",
     "ignorePaths": [],
     "dictionaryDefinitions": [],
-    "dictionaries": ["backdrop-filter"],
-    "words": [],
-    "ignoreWords": ["backdrop-filter"],
+    "dictionaries": [
+        "backdrop-filter"
+    ],
+    "words": [
+        "signup"
+    ],
+    "ignoreWords": [
+        "backdrop-filter"
+    ],
     "import": []
 }

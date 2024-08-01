@@ -186,7 +186,7 @@ header {
     color: var(--foundation-jade);
 }
 
-.hero a:hover {}
+/* .hero a:hover {} */
 
 .image {
     display: block;
