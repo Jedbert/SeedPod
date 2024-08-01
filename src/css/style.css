@@ -41,8 +41,6 @@ header {
 
 .nav-item ul {
     display: flex;
-    float: right;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -61,4 +59,49 @@ header {
     line-height: normal;
     letter-spacing: 0.01375rem;
     text-decoration: none;
+}
+
+#login-button {
+    display: flex;
+    width: 7.5rem;
+    height: 2.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--tints-shade);
+    background: var(--Foundation-Jade-jade-50, #E6F6F2);
+}
+
+#login-button a {
+    color: var(--teal);
+    font-size: 1.25rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.025rem;
+}
+
+#signup-button {
+    display: flex;
+    width: 7.5rem;
+    height: 2.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    background: var(--jade);
+}
+
+#signup-button a {
+    color: var(--foundation-jade);
+    font-size: 1.25rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.025rem;
 }
