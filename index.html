@@ -14,163 +14,389 @@
     <link rel="stylesheet" href="node_modules\bootstrap\scss\_nav.scss">
     <link rel="stylesheet" href="node_modules/bootstrap/scss/_navbar.scss">
     <link rel="stylesheet" href="node_modules/bootstrap/scss/_variables.scss">
+    <link rel="stylesheet" href="src/css/preloader.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/media.css">
     <title>SeedPod</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="logo" href="index.html">
-                    <img src="src\images\SeedPod.png" alt="Logo">
-                </a>
-                <div class="nav-item">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><span id="login-button"><a href="#login" rel="noopener noreferrer">Login</a></span></li>
-                        <li><span id="signup-button"><a href="#signup" rel="noopener noreferrer">Signup</a></span></li>
-                    </ul>
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="src/images/SeedPod.png" alt="Logo">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <main id="main">
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="logo" href="index.html">
+                        <img src="src\images\SeedPod.png" alt="Logo">
+                    </a>
+                    <div class="nav-item">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><span id="login-button"><a href="#login" rel="noopener noreferrer">Login</a></span></li>
+                            <li><span id="signup-button"><a href="#signup" rel="noopener noreferrer">Signup</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="hero">
+            <h1>Ignite <span id="jade">Innovation: <br></span> Connect, Invest, and <br>Grow</h1>
+            <p class="hero-text">Join a thriving ecosystem where creative ideas meet investors, industry experts, and
+                community builders</p>
+            <a href="#get-started" class="get-started" rel="noopener noreferrer">Get Started <img
+                    src="node_modules/bootstrap-icons/icons/arrow-right-short.svg" alt=""></a>
+            <div id="image">
+                <img id="hero-image" src="src/images/hero-image.svg" alt="Hero Image">
+                <span id="idea"><img src="src/images/bulb.png" alt="" class="idea">
+                    <p>Idea Submission</p>
+                </span>
+                <span id="growth"><img src="src/images/growth.png" alt="" class="growth">
+                    <p>Growth</p>
+                </span>
+                <span id="implement"><img src="src/images/tool.png" alt="" class="implement">
+                    <p>Implementation</p>
+                </span>
+                <span id="invest"><img src="src/images/dollar.png" alt="" class="invest">
+                    <p>Investment</p>
+                </span>
+                <span id="valuation"><img src="src/images/zoom.png" alt="" class="valuation">
+                    <p>Evaluation</p>
+                </span>
+            </div>
+        </section>
+        <section id="partners">
+            <a href="https://www.avca.africa" target="_blank" rel="noopener noreferrer"><img src="src/images/avca.png"
+                    aria-label="AVCA" alt="AVCA" class="partner-names"></a>
+            <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer"><img
+                    src="src/images/bill-melinda.png" aria-label="Bill & Melinda Gates" alt="Bill & Melinda Gates"
+                    class="partner-names"></a>
+            <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="src/images/techstar.png" aria-label="techstars" alt="techstars" class="partner-names"></a>
+            <a href="https://www.boi.ng/" target="_blank" rel="noopener noreferrer"><img src="src/images/boi.png"
+                    aria-label="Bank of
+            Industry" alt="Bank of Industry" class="partner-names"></a>
+        </section>
+
+        <!-- About -->
+        <section id="about-seedpod">
+            <h2>What We Do</h2>
+            <p class="tagline">
+                Here is a brief description of SeedPod is all about
+            </p>
+            <div id="card">
+                <div class="about-card">
+                    <img src="src/images/chain.svg" alt="" class="chain">
+                    <h3>
+                        Connect Innovators with Investors
+                    </h3>
+                    <p>
+                        We provide a platform where innovators can showcase their ideas to potential investors and
+                        facilitate
+                        investor matching
+                        with suitable opportunities, helping startups secure the necessary funds.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <img src="src/images/connect.svg" alt="" class="connect">
+                    <h3>Facilitate Industry-Specific Discussions and Collaboration</h3>
+                    <p>Our platform hosts industry-specific discussion forums, enabling users to share insights,
+                        collaborate
+                        on
+                        initiatives,
+                        and stay informed about the latest trends and innovation.</p>
+                </div>
+                <div class="about-card">
+                    <img src="src/images/analysis.svg" alt="" class="analysis">
+                    <h3>
+                        Support Personal and Professional Development
+                    </h3>
+                    <p>
+                        We offer mentorship programs connecting users with experienced mentors, provide resources for
+                        business
+                        planning and
+                        pitching, to help users grow professionally and personally
+
+                    </p>
                 </div>
             </div>
-        </nav>
-    </header>
-    <section id="hero">
-        <h1>Ignite <span id="jade">Innovation: <br></span> Connect, Invest, and <br>Grow</h1>
-        <p class="hero-text">Join a thriving ecosystem where creative ideas meet investors, industry experts, and
-            community builders</p>
-        <a href="#get-started" class="get-started" rel="noopener noreferrer">Get Started <img
-                src="node_modules/bootstrap-icons/icons/arrow-right-short.svg" alt=""></a>
-        <div id="image">
-            <img id="hero-image" src="src/images/hero-image.svg" alt="Hero Image">
-            <span id="idea"><img src="src/images/bulb.png" alt="" class="idea">
-                <p>Idea Submission</p>
-            </span>
-            <span id="growth"><img src="src/images/growth.png" alt="" class="growth">
-                <p>Growth</p>
-            </span>
-            <span id="implement"><img src="src/images/tool.png" alt="" class="implement">
-                <p>Implementation</p>
-            </span>
-            <span id="invest"><img src="src/images/dollar.png" alt="" class="invest">
-                <p>Investment</p>
-            </span>
-            <span id="valuation"><img src="src/images/zoom.png" alt="" class="valuation">
-                <p>Evaluation</p>
-            </span>
-        </div>
-    </section>
-    <section id="partners">
-        <a href="https://www.avca.africa" target="_blank" rel="noopener noreferrer"><img src="src/images/avca.png"
-                aria-label="AVCA" alt="AVCA" class="partner-names"></a>
-        <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer"><img
-                src="src/images/bill-melinda.png" aria-label="Bill & Melinda Gates" alt="Bill & Melinda Gates"
-                class="partner-names"></a>
-        <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer"><img
-                src="src/images/techstar.png" aria-label="techstars" alt="techstars" class="partner-names"></a>
-        <a href="https://www.boi.ng/" target="_blank" rel="noopener noreferrer"><img src="src/images/boi.png"
-                aria-label="Bank of
-            Industry" alt="Bank of Industry" class="partner-names"></a>
-    </section>
+        </section>
 
-    <section id="about-seedpod">
-        <h2>What We Do</h2>
-        <p class="tagline">
-            Here is a brief description of SeedPod is all about
-        </p>
-        <div id="card">
-            <div class="about-card">
-                <img src="src/images/chain.svg" alt="" class="chain">
-                <h3>
-                    Connect Innovators with Investors
-                </h3>
-                <p>
-                    We provide a platform where innovators can showcase their ideas to potential investors and
-                    facilitate
-                    investor matching
-                    with suitable opportunities, helping startups secure the necessary funds.
-                </p>
+        <!-- Features -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="right">
+                <div class="right-side">
+                    <img src="src/images/bulb.png" alt="reload">
+                    <h3>Idea Bank</h3>
+                    <p>Browse a curated collection of groundbreaking ideas ready for investment. Connect with
+                        visionaries
+                        and
+                        fund the next big thing</p>
+                    <button class="btn">Get Started</button>
+                </div>
+                <img src="src/images/bulb-coin.png" alt="Bulb">
             </div>
-            <div class="about-card">
-                <img src="src/images/connect.svg" alt="" class="connect">
-                <h3>Facilitate Industry-Specific Discussions and Collaboration</h3>
-                <p>Our platform hosts industry-specific discussion forums, enabling users to share insights, collaborate
-                    on
-                    initiatives,
-                    and stay informed about the latest trends and innovation.</p>
+            <div class="right">
+                <div class="right-side">
+                    <img src="src/images/chat.png" alt="reload">
+                    <h3>Discussion Forum</h3>
+                    <p>Join specialized forums to discuss trends, challenges, and opportunities within your field of
+                        interest.
+                        Share insights
+                        and collaborate with peers.</p>
+                    <button class="btn">Get Started</button>
+                </div>
+                <img src="src/images/discussion.png" alt="Discussion">
             </div>
-            <div class="about-card">
-                <img src="src/images/analysis.svg" alt="" class="analysis">
-                <h3>
-                    Support Personal and Professional Development
-                </h3>
-                <p>
-                    We offer mentorship programs connecting users with experienced mentors, provide resources for
-                    business
-                    planning and
-                    pitching, to help users grow professionally and personally
+            <div class="right">
+                <div class="right-side">
+                    <img src="src/images/thumb-up.png" alt="reload">
+                    <h3>Mentorship</h3>
+                    <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your
+                        skills
+                        and
+                        career
+                        prospects through tailored mentorship
+                    </p>
+                    <button class="btn">Get Started</button>
+                </div>
+                <img src="src/images/mentorship.png" alt="Mentorship">
+            </div>
+            <div class="right">
+                <div class="right-side">
+                    <img src="src/images/lock.png" alt="reload">
+                    <h3>Intellectual Property Protection</h3>
+                    <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your
+                        skills
+                        and
+                        career
+                        prospects through tailored mentorship
+                    </p>
+                    <button class="btn">Get Started</button>
+                </div>
+                <img src="src/images/discussion.png" alt="Mentorship">
+            </div>
+        </section>
 
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- How it Works -->
 
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="right">
-            <div class="right-side">
-                <img src="src/images/bulb.png" alt="reload">
-                <h3>Idea Bank</h3>
-                <p>Browse a curated collection of groundbreaking ideas ready for investment. Connect with visionaries
-                    and
-                    fund the next big thing</p>
-                <button class="btn">Get Started</button>
+        <section id="work-seedpod">
+            <h2>How It Works</h2>
+            <p class="tagline">
+                For Innovators
+            </p>
+            <div id="work-card">
+                <div class="card">
+                    <img src="src/images/idea.svg" alt="" class="idea">
+                    <h3>
+                        Submit Your Idea
+                    </h3>
+                    <p>
+                        Present your innovative idea to a network of investors and industry professionals.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="src/images/text-input.svg" alt="" class="text-input">
+                    <h3>Connect with Investors</h3>
+                    <p>Receive offers and feedback from potential investors interested in supporting your project.</p>
+                </div>
+                <div class="card">
+                    <img src="src/images/analysis.svg" alt="" class="analysis">
+                    <h3>
+                        Collaborate and Grow
+                    </h3>
+                    <p>
+                        Work with mentors, engage in discussions, and leverage community support to bring your idea to
+                        life.
+                    </p>
+                </div>
             </div>
-            <img src="src/images/bulb-coin.png" alt="Bulb">
-        </div>
-        <div class="left">
-            <div class="left-side">
-                <img src="src/images/chat.png" alt="reload">
-                <h3>Discussion Forum</h3>
-                <p>Join specialized forums to discuss trends, challenges, and opportunities within your field of
-                    interest.
-                    Share insights
-                    and collaborate with peers.</p>
-                <button class="btn">Get Started</button>
+            <p class="tagline">
+                For Investors
+            </p>
+            <div id="work">
+                <div class="card">
+                    <img src="src/images/explore.svg" alt="" class="explore">
+                    <h3>
+                        Explore Innovative Ideas
+                    </h3>
+                    <p>
+                        Browse through a curated selection of groundbreaking ideas submitted by innovators. Access
+                        detailed
+                        pitches, business
+                        models, and market potential analyses to identify opportunities that align with your investment
+                        goals
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="src/images/investment-selection.svg" alt="" class="selection">
+                    <h3>Make Informed Investment Decisions</h3>
+                    <p>Review comprehensive information about each idea. Engage with innovators directly to ask
+                        questions,
+                        negotiate terms, and
+                        make informed investment choices.</p>
+                </div>
+                <div class="card">
+                    <img src="src/images/explore.svg" alt="" class="track">
+                    <h3>
+                        Track and Manage Investments
+                    </h3>
+                    <p>
+                        Keep track of your investments through a dedicated dashboard. View real-time updates on project
+                        progress, financial
+                        performance, and milestone achievements.
+                    </p>
+                </div>
             </div>
-            <img src="src/images/discussion.png" alt="Discussion">
-        </div>
-        <div class="right">
-            <div class="right-side">
-                <img src="src/images/thumb-up.png" alt="reload">
-                <h3>Mentorship</h3>
-                <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your skills
-                    and
-                    career
-                    prospects through tailored mentorship
-                </p>
-                <button class="btn">Get Started</button>
-            </div>
-            <img src="src/images/mentorship.png" alt="Mentorship">
-        </div>
-        <div class="left">
-            <div class="left-side">
-                <img src="src/images/lock.png" alt="reload">
-                <h3>Intellectual Property Protection</h3>
-                <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your skills
-                    and
-                    career
-                    prospects through tailored mentorship
-                </p>
-                <button class="btn">Get Started</button>
-            </div>
-            <img src="src/images/discussion.png" alt="Mentorship">
-        </div>
-    </section>
+        </section>
 
+        <!-- Success Stories -->
+        <section id="story-seedpod">
+            <img src="src/images/colon.svg" alt="reload" class="colon">
+            <h1>Success Stories</h1>
+            <p class="tagline">
+                Read inspiring stories from our users who have achieved remarkable success through our platform. Their
+                experiences
+                highlight the impact of collaboration and investment.
+            </p>
+            <div id="story-card">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="src/images/jedidiah-outdoors.jpg" alt="" class="story">
+                        <h3>
+                            Jedidiah
+                        </h3>
+                        <p class="punchline">
+                            Entrepreneur
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            “With Seedpod, I secured investment and mentorship to bring my sustainable fashion brand,
+                            EcoFashion
+                            Hub, to life, which
+                            is now thriving in the market.”
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/lisa.png" alt="" class="story">
+                        <h3>Lisa Adams</h3>
+                        <p class="punchline">
+                            Venture Capitalist
+                        </p>
+                        <div class="divide"></div>
+                        <p>“I discovered and invested in a revolutionary AI-driven healthcare startup on Seedpod,
+                            helping
+                            them
+                            launch their
+                            prototype and secure additional funding.”</p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/jedidiah.jpg" alt="" class="story">
+                        <h3>
+                            Bamidele O.
+                        </h3>
+                        <p class="punchline">
+                            COO GBEFLA Nigeria Limited
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            “Using Seedpod, I launched a sustainable agriculture project, improving food security and
+                            creating
+                            jobs in undeserved
+                            areas with the support of investors and community members.”
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/mike.png" alt="" class="story">
+                        <h3>
+                            Mike Bert
+                        </h3>
+                        <p class="punchline">
+                            Marketing Agency Owner
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            "The customer support team at The Social Manager is top-notch. They're always there when I
+                            need
+                            help."
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/jedidiah-outdoors.jpg" alt="" class="story">
+                        <h3>
+                            Jedidiah
+                        </h3>
+                        <p class="punchline">
+                            Entrepreneur
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            “With Seedpod, I secured investment and mentorship to bring my sustainable fashion brand,
+                            EcoFashion
+                            Hub, to life, which
+                            is now thriving in the market.”
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/lisa.png" alt="" class="story">
+                        <h3>Lisa Adams</h3>
+                        <p class="punchline">
+                            Venture Capitalist
+                        </p>
+                        <div class="divide"></div>
+                        <p>“I discovered and invested in a revolutionary AI-driven healthcare startup on Seedpod,
+                            helping
+                            them
+                            launch their
+                            prototype and secure additional funding.”</p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/jedidiah.jpg" alt="" class="story">
+                        <h3>
+                            Bamidele O.
+                        </h3>
+                        <p class="punchline">
+                            COO GBEFLA Nigeria Limited
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            “Using Seedpod, I launched a sustainable agriculture project, improving food security and
+                            creating
+                            jobs in undeserved
+                            areas with the support of investors and community members.”
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="src/images/mike.png" alt="" class="story">
+                        <h3>
+                            Mike Bert
+                        </h3>
+                        <p class="punchline">
+                            Marketing Agency Owner
+                        </p>
+                        <div class="divide"></div>
+                        <p>
+                            "The customer support team at The Social Manager is top-notch. They're always there when I
+                            need
+                            help."
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -212,8 +438,8 @@
         image.addEventListener('mouseenter', handleMouseEnter);
         image.addEventListener('mouseleave', handleMouseLeave);
 
-
     </script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>

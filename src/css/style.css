@@ -28,6 +28,11 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    width: 100vw;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -388,12 +393,15 @@ header {
     filter: contrast(200%);
 }
 
+/* About */
 #about-seedpod {
     display: flex;
     width: 90rem;
     height: 37.5625rem;
     padding: 5rem 7.5rem 0rem 7.5rem;
     flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
     align-items: center;
     gap: 5rem;
     justify-content: space-between;
@@ -408,6 +416,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+    margin-bottom: -9vh;
     justify-content: center;
 }
 
@@ -425,7 +434,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5vw;
-    margin-left: 5vw;
+    margin-right: 5vw;
     justify-content: center;
     align-items: center;
 }
@@ -539,17 +548,66 @@ header {
     align-self: stretch;
 }
 
-#features .right {}
+#features .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    margin-left: 5%;
+}
 
-#features .right-side {}
+#features .right:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
 
-#features .right .right-side img {}
+#features .right .right-side img {
+    background: none;
+    width: 6.25rem;
+    height: 6.25rem;
+}
 
-#features .right .right-side h3 {}
+#features .right .right-side h3 {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    align-self: stretch;
+}
 
-#features .right .right-side p {}
+#features .right .right-side p {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    align-self: stretch;
+    letter-spacing: 0.03rem;
+    width: 37vw;
+}
 
-#features .right .right-side .btn {}
+#features .right .right-side .btn {
+    display: flex;
+    height: 2.25rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--tints-shade);
+    background: var(--foundation-jade);
+    transition: transform 0.9s ease-in-out;
+    color: var(--jade);
+}
+
+#features .right .right-side .btn:hover {
+    color: var(--pink);
+    transform: scale(1.09);
+}
 
 #features .right img {
     width: 35.12544rem;
@@ -558,217 +616,322 @@ header {
     background: lightgray 50% / cover no-repeat;
 }
 
-#features .left {}
+/* How it Works */
 
-#features .left-side {}
+#work-seedpod {
+    display: flex;
+    width: 90rem;
+    height: 37.5625rem;
+    padding: 5rem 7.5rem 0rem 7.5rem;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-between;
+}
 
-#features .left .left-side img {}
+#work-seedpod h2 {
+    display: flex;
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: -9vh;
+    justify-content: center;
+}
 
-#features .left .left-side h3 {}
+#work-seedpod p {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.03rem;
+}
 
-#features .left .left-side p {}
+#work-card,
+#work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5vw;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+}
 
-#features .left .left-side .btn {}
+#work-card .card,
+#work .card {
+    display: flex;
+    height: 20.25rem;
+    width: 25rem;
+    min-width: 17.5rem;
+    max-width: 43.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 0 0;
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: 0px 24px 48px -16px rgba(7, 26, 21, 0.42);
+    transition: transform 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-#features .left img {}
+#work-card .card:hover,
+#work .card:hover {
+    opacity: 1;
+    filter: contrast(200%);
+    transform: scale(1.1);
+}
 
-/* Media Query */
-@media only screen and (min-width: 1025px) and (aspect-ratio: 16/9) {
-    header {
-        padding: 1rem 10rem;
+#work-card .card h3,
+#work .card h3 {
+    color: var(--smokyblack);
+    font-family: "Darker Grotesque";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+#work-card .card p,
+#work .card p {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.0275rem;
+    text-align: left;
+}
+
+.idea {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background-color: var(--orange);
+}
+
+.text-input {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background-color: var(--jade);
+}
+
+.explore {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background-color: var(--teal);
+}
+
+.selection {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background-color: var(--purple);
+}
+
+.track {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background-color: var(--yellow);
+}
+
+/* Success Stories */
+
+#story-seedpod {
+    display: flex;
+    flex-direction: column;
+    margin-top: 640px;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#story-seedpod h1 {
+    display: flex;
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* margin-bottom: -9vh; */
+    justify-content: center;
+}
+
+#story-seedpod p {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+#story-card .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5vw;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#story-card .card-container:hover {
+    animation-play-state: paused;
+}
+
+#story-card .card-container {
+    display: flex;
+    flex-direction: row;
+    animation: slide 20s linear infinite;
+    will-change: transform;
+    position: relative;
+}
+
+#story-card .card-container .clone {
+    display: flex;
+    flex-direction: row;
+    animation: slide 20s linear infinite;
+    animation-delay: -10s;
+}
+
+#story-card .card-container .card {
+    display: flex;
+    height: 33rem;
+    width: 25rem;
+    min-width: 17.5rem;
+    max-width: 30.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 0 0;
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: 0px 24px 48px -16px rgba(7, 26, 21, 0.42);
+    transition: transform 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#story-card .card-container .card:hover {
+    transition: transform 0.3s ease-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
     }
 
-    #hero {
-        padding: 0rem 10rem;
-    }
-
-    #hero h1 {
-        font-size: 3rem;
-        width: 50%;
-        margin-top: 15vh;
-    }
-
-    #image {
-        width: 50vw;
-        margin-left: 45vw;
-    }
-
-    #jade {
-        font-size: 3rem;
-    }
-
-    #hero p {
-        margin-top: -1.9rem;
-    }
-
-    #idea p,
-    #growth p,
-    #implement p,
-    #invest p,
-    #valuation p {
-        font-size: 1rem;
-    }
-
-    #growth p {
-        margin-top: 1vh;
-    }
-
-    #valuation {
-        margin-left: 43vw;
-        position: absolute;
-    }
-
-    #valuation p {
-        margin-top: -0.3vh;
-    }
-
-    #implement p,
-    #invest p {
-        margin-top: -19.3vh;
-    }
-
-    #idea {
-        position: absolute;
-        width: 5vw;
-        margin-top: -20vh;
-        margin-left: 13vw;
-    }
-
-    #valuation {
-        position: absolute;
-        width: 5vw;
-        margin-top: 7vh;
-        margin-left: 24.5vw;
+    100% {
+        transform: translateX(calc(-300%));
     }
 }
 
-@media only screen and (min-width: 1441px) and (aspect-ratio: 16/9) {
-    header {
-        padding: 1rem 10rem;
-    }
-
-    #hero {
-        padding: 0rem 10rem;
-        height: 87vh;
-    }
-
-    #hero h1 {
-        font-size: 3rem;
-        width: 50%;
-        margin-top: 15vh;
-    }
-
-    #hero p {
-        margin-top: -11%;
-        width: 23%;
-    }
-
-    #hero a {
-        margin-top: -3%;
-    }
-
-    #image {
-        width: 40vw;
-        margin-top: 5%;
-        margin-left: 50vw;
-    }
-
-    #idea {
-        position: absolute;
-        width: 5vw;
-        margin-top: -13vh;
-        margin-left: 13vw;
-    }
-
-    #idea p {
-        margin-top: -0.4vh;
-        font-size: 1rem;
-        width: 10vw;
-    }
-
-    #valuation {
-        position: absolute;
-        width: 5vw;
-        margin-top: 7vh;
-        margin-left: 24.5vw;
-    }
-
-    #invest {
-        position: absolute;
-        width: 5vw;
-        margin-top: 40vh;
-    }
-
-    #invest p {
-        margin-top: -15vh;
-        font-size: 1rem;
-        width: 7.5vw;
-    }
-
-    #implement {
-        position: absolute;
-        width: 5vw;
-        margin-top: 42vh;
-    }
-
-    #implement p {
-        margin-top: -15vh;
-        font-size: 1rem;
-        width: 9vw;
-    }
-
-    #growth p {
-        font-size: 1rem;
-        width: 6vw;
-        margin-top: 2%;
-    }
-
-    #valuation p {
-        font-size: 1rem;
-        width: 7vw;
-    }
+#story-card .card-container .card img {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background: lightgray 50% / cover no-repeat, #FFF;
 }
 
-/* @media only screen and (min-width: 1920px) and (aspect-ratio: 16/9) {
-    header {
-        display: none;
-        padding: 1rem 10rem;
-    }
+#story-card .card-container .card h3 {
+    color: var(--smokyblack);
+    font-family: "Darker Grotesque";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
 
-    #hero {
-        padding: 0rem 10rem;
-    }
+#story-card .card-container .divide {
+    width: 2.5rem;
+    height: 0.25rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    background: var(--jade);
+}
 
-    #hero h1 {
-        font-size: 4rem;
-        width: 50%;
-        margin-top: 15vh;
-    }
+#story-card .card-container .card p {
+    color: var(--Grays-Black);
+    font-family: "Darker Grotesque";
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.0275rem;
+    text-align: center;
+}
 
-    #image {
-        width: 40vw;
-        margin-left: 60vw;
-    }
-
-    #idea p,
-    #growth p,
-    #implement p,
-    #invest p,
-    #valuation p {
-        font-size: 1.2rem;
-    }
-
-    #idea {
-        position: absolute;
-        width: 5vw;
-        margin-top: 90vh;
-        margin-left: 13vw;
-    }
-
-    #valuation {
-        position: absolute;
-        width: 5vw;
-        margin-top: 7vh;
-        margin-left: 24.5vw;
-    }
-} */
+.colon {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--jade);
+}

@@ -1,0 +1,222 @@
+/* Media Query */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        width: 100vw;
+    }
+
+    header {
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+        height: 107vh;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #hero p {
+        margin-top: -11%;
+        width: 23%;
+    }
+
+    #hero a {
+        margin-top: -3%;
+    }
+
+    #image {
+        width: 40vw;
+        margin-top: 5%;
+        margin-left: 50vw;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: -13vh;
+        margin-left: 13vw;
+    }
+
+    #idea p {
+        margin-top: -0.4vh;
+        font-size: 1rem;
+        width: 10vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+
+    #invest {
+        position: absolute;
+        width: 5vw;
+        margin-top: 40vh;
+    }
+
+    #invest p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 7.5vw;
+    }
+
+    #implement {
+        position: absolute;
+        width: 5vw;
+        margin-top: 42vh;
+    }
+
+    #implement p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 9vw;
+    }
+
+    #growth p {
+        font-size: 1rem;
+        width: 6vw;
+        margin-top: 2%;
+    }
+
+    #valuation p {
+        font-size: 1rem;
+        width: 7vw;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (aspect-ratio: 16/9) {
+    header {
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+        height: 87vh;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #hero p {
+        margin-top: -11%;
+        width: 23%;
+    }
+
+    #hero a {
+        margin-top: -3%;
+    }
+
+    #image {
+        width: 40vw;
+        margin-top: 5%;
+        margin-left: 50vw;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: -13vh;
+        margin-left: 13vw;
+    }
+
+    #idea p {
+        margin-top: -0.4vh;
+        font-size: 1rem;
+        width: 10vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+
+    #invest {
+        position: absolute;
+        width: 5vw;
+        margin-top: 40vh;
+    }
+
+    #invest p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 7.5vw;
+    }
+
+    #implement {
+        position: absolute;
+        width: 5vw;
+        margin-top: 42vh;
+    }
+
+    #implement p {
+        margin-top: -15vh;
+        font-size: 1rem;
+        width: 9vw;
+    }
+
+    #growth p {
+        font-size: 1rem;
+        width: 6vw;
+        margin-top: 2%;
+    }
+
+    #valuation p {
+        font-size: 1rem;
+        width: 7vw;
+    }
+}
+
+/* @media only screen and (min-width: 1920px) and (aspect-ratio: 16/9) {
+    header {
+        display: none;
+        padding: 1rem 10rem;
+    }
+
+    #hero {
+        padding: 0rem 10rem;
+    }
+
+    #hero h1 {
+        font-size: 4rem;
+        width: 50%;
+        margin-top: 15vh;
+    }
+
+    #image {
+        width: 40vw;
+        margin-left: 60vw;
+    }
+
+    #idea p,
+    #growth p,
+    #implement p,
+    #invest p,
+    #valuation p {
+        font-size: 1.2rem;
+    }
+
+    #idea {
+        position: absolute;
+        width: 5vw;
+        margin-top: 90vh;
+        margin-left: 13vw;
+    }
+
+    #valuation {
+        position: absolute;
+        width: 5vw;
+        margin-top: 7vh;
+        margin-left: 24.5vw;
+    }
+} */

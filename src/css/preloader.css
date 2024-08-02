@@ -1,0 +1,97 @@
+/* Define colors for the animation */
+:root {
+    --color1: #FF5733;
+    --color2: #33FF57;
+    --color3: #3357FF;
+    --color4: #F333FF;
+}
+
+/* Hide content until loaded */
+#main {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Preloader content */
+.preloader-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo styling */
+#preloader img {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+    z-index: 1;
+}
+
+/* Rotating circle around logo */
+.circle {
+    position: absolute;
+    width: 150px;
+    /* Adjust size as needed */
+    height: 150px;
+    /* Adjust size as needed */
+    border: 5px solid transparent;
+    border-radius: 50%;
+    border-top-color: var(--color1);
+    /* Start color */
+    animation: rotate 2s linear infinite, color-change 3s linear infinite;
+    z-index: 0;
+}
+
+/* Animation for rotating the circle */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for color changing */
+@keyframes color-change {
+    0% {
+        border-top-color: var(--color1);
+    }
+
+    25% {
+        border-top-color: var(--color2);
+    }
+
+    50% {
+        border-top-color: var(--color3);
+    }
+
+    75% {
+        border-top-color: var(--color4);
+    }
+
+    100% {
+        border-top-color: var(--color1);
+    }
+}
