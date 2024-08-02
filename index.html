@@ -31,8 +31,8 @@
                         <li><a href="#about-us">About Us</a></li>
                         <li><a href="#contact-us">Contact Us</a></li>
                         <li><a href="#resources">Resources</a></li>
-                        <li><span id="login-button"><a href="#login">Login</a></span></li>
-                        <li><span id="signup-button"><a href="#signup">Signup</a></span></li>
+                        <li><span id="login-button"><a href="#login" rel="noopener noreferrer">Login</a></span></li>
+                        <li><span id="signup-button"><a href="#signup" rel="noopener noreferrer">Signup</a></span></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,7 @@
         <h1>Ignite <span id="jade">Innovation: <br></span> Connect, Invest, and <br>Grow</h1>
         <p class="hero-text">Join a thriving ecosystem where creative ideas meet investors, industry experts, and
             community builders</p>
-        <a href="#get-started" class="get-started">Get Started <img
+        <a href="#get-started" class="get-started" rel="noopener noreferrer">Get Started <img
                 src="node_modules/bootstrap-icons/icons/arrow-right-short.svg" alt=""></a>
         <div id="image">
             <img id="hero-image" src="src/images/hero-image.svg" alt="Hero Image">
@@ -63,13 +63,17 @@
             </span>
         </div>
     </section>
-    <section class="partners">
-        <img src="src/images/avca.png" aria-label="AVCA" alt="AVCA" class="partner-names">
-        <img src="src/images/bill-melinda.png" aria-label="Bill & Melinda Gates" alt="Bill & Melinda Gates"
-            class="partner-names">
-        <img src="src/images/techstar.png" aria-label="techstars" alt="techstars" class="partner-names">
-        <img src="src/images/boi.png" aria-label="Bank of
-            Industry" alt="Bank of Industry" class="partner-names">
+    <section id="partners">
+        <a href="https://www.avca.africa" target="_blank" rel="noopener noreferrer"><img src="src/images/avca.png"
+                aria-label="AVCA" alt="AVCA" class="partner-names"></a>
+        <a href="https://www.gatesfoundation.org/" target="_blank" rel="noopener noreferrer"><img
+                src="src/images/bill-melinda.png" aria-label="Bill & Melinda Gates" alt="Bill & Melinda Gates"
+                class="partner-names"></a>
+        <a href="https://www.techstars.com/" target="_blank" rel="noopener noreferrer"><img
+                src="src/images/techstar.png" aria-label="techstars" alt="techstars" class="partner-names"></a>
+        <a href="https://www.boi.ng/" target="_blank" rel="noopener noreferrer"><img src="src/images/boi.png"
+                aria-label="Bank of
+            Industry" alt="Bank of Industry" class="partner-names"></a>
     </section>
 
     <section id="about-seedpod">
@@ -77,7 +81,7 @@
         <p class="tagline">
             Here is a brief description of SeedPod is all about
         </p>
-        <div class="card">
+        <div id="card">
             <div class="about-card">
                 <img src="src/images/chain.svg" alt="" class="chain">
                 <h3>
@@ -111,6 +115,59 @@
 
                 </p>
             </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="right">
+            <div class="right-side">
+                <img src="src/images/bulb.png" alt="reload">
+                <h3>Idea Bank</h3>
+                <p>Browse a curated collection of groundbreaking ideas ready for investment. Connect with visionaries
+                    and
+                    fund the next big thing</p>
+                <button class="btn">Get Started</button>
+            </div>
+            <img src="src/images/bulb-coin.png" alt="Bulb">
+        </div>
+        <div class="left">
+            <div class="left-side">
+                <img src="src/images/chat.png" alt="reload">
+                <h3>Discussion Forum</h3>
+                <p>Join specialized forums to discuss trends, challenges, and opportunities within your field of
+                    interest.
+                    Share insights
+                    and collaborate with peers.</p>
+                <button class="btn">Get Started</button>
+            </div>
+            <img src="src/images/discussion.png" alt="Discussion">
+        </div>
+        <div class="right">
+            <div class="right-side">
+                <img src="src/images/thumb-up.png" alt="reload">
+                <h3>Mentorship</h3>
+                <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your skills
+                    and
+                    career
+                    prospects through tailored mentorship
+                </p>
+                <button class="btn">Get Started</button>
+            </div>
+            <img src="src/images/mentorship.png" alt="Mentorship">
+        </div>
+        <div class="left">
+            <div class="left-side">
+                <img src="src/images/lock.png" alt="reload">
+                <h3>Intellectual Property Protection</h3>
+                <p>Build meaningful relationships with industry experts and aspiring professionals. Enhance your skills
+                    and
+                    career
+                    prospects through tailored mentorship
+                </p>
+                <button class="btn">Get Started</button>
+            </div>
+            <img src="src/images/discussion.png" alt="Mentorship">
         </div>
     </section>
 

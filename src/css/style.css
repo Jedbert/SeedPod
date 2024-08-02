@@ -365,7 +365,7 @@ header {
     line-height: normal;
 }
 
-.partners {
+#partners {
     display: flex;
     height: 8.75rem;
     padding: 1rem;
@@ -375,18 +375,17 @@ header {
     background: var(--jade);
 }
 
-.partner-names {
+#partners a .partner-names {
     transition: transform 0.2s ease-in-out;
 }
 
-.partner-names:hover {
+#partners a .partner-names:hover {
     transform: scale(1.1);
 }
 
-
-.partners img:nth-child(4) {
-    opacity: 150;
-    filter: contrast(150%);
+#partners a:nth-child(4) img {
+    opacity: 1;
+    filter: contrast(200%);
 }
 
 #about-seedpod {
@@ -414,7 +413,6 @@ header {
 
 #about-seedpod p {
     color: var(--Grays-Black);
-    text-align: center;
     font-family: "Darker Grotesque";
     font-size: 1.5rem;
     font-style: normal;
@@ -423,17 +421,21 @@ header {
     letter-spacing: 0.03rem;
 }
 
-.card {
+#card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5vw;
+    margin-left: 5vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-card {
+#card .about-card {
     display: flex;
-    height: 21.25rem;
+    height: 22.25rem;
+    width: 25rem;
     min-width: 17.5rem;
-    max-width: 27.5rem;
+    max-width: 43.5rem;
     padding: 1.5rem;
     flex-direction: column;
     align-items: flex-start;
@@ -441,26 +443,34 @@ header {
     flex: 1 0 0;
     border-radius: 1rem;
     background: var(--white);
-    box-shadow: 0px 24px 48px -16px rgba(11, 53, 41, 0.12);
+    box-shadow: 0px 24px 48px -16px rgba(7, 26, 21, 0.42);
+    transition: transform 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#card .about-card:hover {
+    opacity: 1;
+    filter: contrast(200%);
+    transform: scale(1.1);
 }
 
 .about-card h3 {
     color: var(--smokyblack);
     font-family: "Darker Grotesque";
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
 }
 
-.about-card p {
+#card .about-card p {
     color: var(--Grays-Black);
     font-family: "Darker Grotesque";
-    font-size: 1.375rem;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.0275rem;
+    text-align: left;
 }
 
 .chain {
@@ -504,6 +514,63 @@ header {
     border-radius: 0.75rem;
     background-color: var(--jade);
 }
+
+/* Key Features */
+
+#features {
+    display: flex;
+    width: 90rem;
+    min-width: 75rem;
+    max-width: 100rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.0625rem;
+    margin-top: 15%;
+}
+
+#features h2 {
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    align-self: stretch;
+}
+
+#features .right {}
+
+#features .right-side {}
+
+#features .right .right-side img {}
+
+#features .right .right-side h3 {}
+
+#features .right .right-side p {}
+
+#features .right .right-side .btn {}
+
+#features .right img {
+    width: 35.12544rem;
+    height: 35rem;
+    border-radius: 1rem;
+    background: lightgray 50% / cover no-repeat;
+}
+
+#features .left {}
+
+#features .left-side {}
+
+#features .left .left-side img {}
+
+#features .left .left-side h3 {}
+
+#features .left .left-side p {}
+
+#features .left .left-side .btn {}
+
+#features .left img {}
 
 /* Media Query */
 @media only screen and (min-width: 1025px) and (aspect-ratio: 16/9) {
