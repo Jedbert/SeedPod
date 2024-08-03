@@ -81,3 +81,25 @@ function updateCurrentDate() {
 
   updateCurrentDate();
   setInterval(updateCurrentDate, 1000);
+
+   // Function to open a URL in a new tab/window
+        function openInNewTab(url) {
+            const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+            if (newTab) newTab.opener = null; // Ensure security
+        }
+
+        document.getElementById('btn').addEventListener('click', function () {
+            openInNewTab('https://jedbert.github.io/works');
+        });
+
+        document.getElementById('clickable-card1').addEventListener('click', function () {
+            openInNewTab('https://jedbert.github.io/');
+        });
+
+        document.getElementById('clickable-card2').addEventListener('click', function () {
+            openInNewTab('https://github.com/Jedbert/');
+        });
+
+        document.getElementById('clickable-card3').addEventListener('click', function () {
+            openInNewTab('https://www.linkedin.com/in/jed-a-o/');
+        });

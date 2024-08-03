@@ -1088,3 +1088,25 @@ header {
     letter-spacing: 0.07rem;
     width: 20.5625rem;
 }
+
+#resource-seedpod #btn {
+    display: flex;
+    height: 3.25rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--jade);
+    transition: all 0.5s ease-out;
+}
+
+#resource-seedpod #btn:hover {
+    color: var(--foundation-jade);
+}
+
+#clickable-card1,
+#clickable-card2,
+#clickable-card3 {
+    cursor: pointer;
+}
