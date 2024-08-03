@@ -59,3 +59,25 @@ cardContainer.addEventListener('mouseout', () => {
     card.style.animationPlayState = 'running';
   });
 });
+
+//Date
+
+function updateCurrentDate() {
+    const currentDate = new Date();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const month = monthNames[currentDate.getMonth()];
+    const day = currentDate.getDate();
+    const year = currentDate.getFullYear();
+    const readTime = '7 min read';
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+  <path d="M0 2.7666V2.40625C0 1.90234 0.158203 1.48633 0.474609 1.1582C0.796875 0.830078 1.2334 0.666016 1.78418 0.666016C2.34082 0.666016 2.78027 0.830078 3.10254 1.1582C3.4248 1.48633 3.58594 1.90234 3.58594 2.40625V2.7666C3.58594 3.26465 3.4248 3.67773 3.10254 4.00586C2.78613 4.32812 2.34961 4.48926 1.79297 4.48926C1.24219 4.48926 0.805664 4.32812 0.483398 4.00586C0.161133 3.67773 0 3.26465 0 2.7666Z" fill="black"/>
+</svg>`;
+
+    const elements = document.getElementsByClassName('date-output');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = `${month} ${day}, ${year}  ${svg} ${readTime}`;
+    }
+  }
+
+  updateCurrentDate();
+  setInterval(updateCurrentDate, 1000);
