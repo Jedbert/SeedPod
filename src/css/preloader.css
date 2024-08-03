@@ -42,7 +42,6 @@
 /* Logo styling */
 #preloader img {
     width: 100px;
-    /* Adjust size as needed */
     height: auto;
     z-index: 1;
 }
@@ -51,9 +50,7 @@
 .circle {
     position: absolute;
     width: 150px;
-    /* Adjust size as needed */
     height: 150px;
-    /* Adjust size as needed */
     border: 5px solid transparent;
     border-radius: 50%;
     border-top-color: var(--color1);

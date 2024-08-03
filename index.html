@@ -56,7 +56,7 @@
                     src="node_modules/bootstrap-icons/icons/arrow-right-short.svg" alt=""></a>
             <div id="image">
                 <img id="hero-image" src="src/images/hero-image.svg" alt="Hero Image">
-                <span id="idea"><img src="src/images/bulb.png" alt="" class="idea">
+                <span id="idea"><img src="src/images/bulb.png" alt="">
                     <p>Idea Submission</p>
                 </span>
                 <span id="growth"><img src="src/images/growth.png" alt="" class="growth">
@@ -330,69 +330,6 @@
                             help."
                         </p>
                     </div>
-                    <div class="card">
-                        <img src="src/images/jedidiah-outdoors.jpg" alt="" class="story">
-                        <h3>
-                            Jedidiah
-                        </h3>
-                        <p class="punchline">
-                            Entrepreneur
-                        </p>
-                        <div class="divide"></div>
-                        <p>
-                            “With Seedpod, I secured investment and mentorship to bring my sustainable fashion brand,
-                            EcoFashion
-                            Hub, to life, which
-                            is now thriving in the market.”
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="src/images/lisa.png" alt="" class="story">
-                        <h3>Lisa Adams</h3>
-                        <p class="punchline">
-                            Venture Capitalist
-                        </p>
-                        <div class="divide"></div>
-                        <p>“I discovered and invested in a revolutionary AI-driven healthcare startup on Seedpod,
-                            helping
-                            them
-                            launch their
-                            prototype and secure additional funding.”</p>
-                    </div>
-                    <div class="card">
-                        <img src="src/images/jedidiah.jpg" alt="" class="story">
-                        <h3>
-                            Bamidele O.
-                        </h3>
-                        <p class="punchline">
-                            COO GBEFLA Nigeria Limited
-                        </p>
-                        <div class="divide"></div>
-                        <p>
-                            “Using Seedpod, I launched a sustainable agriculture project, improving food security and
-                            creating
-                            jobs in undeserved
-                            areas with the support of investors and community members.”
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="src/images/mike.png" alt="" class="story">
-                        <h3>
-                            Mike Bert
-                        </h3>
-                        <p class="punchline">
-                            Marketing Agency Owner
-                        </p>
-                        <div class="divide"></div>
-                        <p>
-                            "The customer support team at The Social Manager is top-notch. They're always there when I
-                            need
-                            help."
-                        </p>
-                    </div>
-                </div>
-                <div class="card-container">
-
                 </div>
             </div>
         </section>
@@ -401,44 +338,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-
-    <script>
-        const image = document.getElementById('image');
-
-        function handleMouseMove(e) {
-            const rect = image.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-
-            // Get mouse position
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-
-            // Calculate the angle from the center of the image to the mouse position
-            const angle = Math.atan2(mouseY - centerY, mouseX - centerX) * (180 / Math.PI);
-
-            // Calculate scale based on angle
-            const scale = Math.abs(Math.sin(angle * Math.PI / 180)) * 0.3 + 1;
-
-            // Apply the transformation
-            image.style.transform = `scale(${scale})`;
-        }
-
-        function handleMouseEnter() {
-            document.addEventListener('mousemove', handleMouseMove);
-        }
-
-        function handleMouseLeave() {
-            document.removeEventListener('mousemove', handleMouseMove);
-            // Reset the scale when the mouse leaves
-            image.style.transform = 'scale(1)';
-        }
-
-        // Add event listeners
-        image.addEventListener('mouseenter', handleMouseEnter);
-        image.addEventListener('mouseleave', handleMouseLeave);
-
-    </script>
     <script src="src/js/script.js"></script>
 </body>
 

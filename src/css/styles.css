@@ -28,11 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    width: 100vw;
-    height: 100%;
-}
-
 a {
     text-decoration: none;
 }
@@ -60,12 +55,13 @@ header {
 
 .navbar {
     display: flex;
-    width: 100vw;
+    width: 90vw;
 }
 
 .navbar .nav-item {
     display: flex;
     flex-direction: row;
+    margin-right: 5vw;
 }
 
 .nav-item ul {
@@ -154,7 +150,7 @@ header {
 
 #hero {
     display: flex;
-    height: 110vh;
+    height: 800px;
     padding: 0rem 7.5rem;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +170,7 @@ header {
     letter-spacing: -0.04rem;
     align-self: stretch;
     width: 60%;
-    margin-top: 10vh;
+    margin-top: 80px;
     position: absolute;
 }
 
@@ -198,13 +194,13 @@ header {
     line-height: 120%;
     letter-spacing: 0.015rem;
     width: 24vw;
-    margin-top: calc(-19%);
+    margin-top: -309px;
 }
 
 #hero a {
     display: flex;
     position: absolute;
-    margin-top: -12%;
+    margin-top: -14%;
     height: 2.25rem;
     padding: 1.25rem 1.5rem;
     justify-content: center;
@@ -238,8 +234,9 @@ header {
 #idea {
     position: absolute;
     width: 5vw;
-    margin-top: -17vh;
-    margin-left: 13vw;
+    margin-top: -109px;
+    margin-left: 183px;
+    background: none;
 }
 
 #idea p {
@@ -265,8 +262,8 @@ header {
 #growth {
     position: absolute;
     width: 5vw;
-    margin-top: 3vh;
-    margin-left: -3vw;
+    margin-top: 30px;
+    margin-left: -30px;
 }
 
 #growth p {
@@ -292,8 +289,8 @@ header {
 #implement {
     position: absolute;
     width: 5vw;
-    margin-top: 52vh;
-    margin-left: 3vw;
+    margin-top: 352px;
+    margin-left: 30px;
 }
 
 #implement p {
@@ -306,7 +303,7 @@ header {
     justify-content: center;
     padding: .5em;
     padding-left: .5em;
-    margin-top: -7.9em;
+    margin-top: -8.5em;
     margin-left: -1vw;
     color: var(--Grays-Black);
     font-family: Inter;
@@ -319,8 +316,8 @@ header {
 #invest {
     position: absolute;
     width: 5vw;
-    margin-top: 50.2vh;
-    margin-left: 19vw;
+    margin-top: 350.2px;
+    margin-left: 300px;
 }
 
 #invest p {
@@ -346,8 +343,8 @@ header {
 #valuation {
     position: absolute;
     width: 5vw;
-    margin-top: 9vh;
-    margin-left: 24.5vw;
+    margin-top: 90px;
+    margin-left: 385.5px;
 }
 
 #valuation p {
@@ -360,7 +357,7 @@ header {
     justify-content: center;
     padding: .5em;
     padding-left: .5em;
-    margin-top: -0.9em;
+    margin-top: -0.59em;
     margin-left: -1vw;
     color: var(--Grays-Black);
     font-family: Inter;
@@ -374,6 +371,7 @@ header {
     display: flex;
     height: 8.75rem;
     padding: 1rem;
+    padding-right: 5em;
     justify-content: center;
     align-items: center;
     gap: 4.125rem;
@@ -398,7 +396,7 @@ header {
     display: flex;
     width: 90rem;
     height: 37.5625rem;
-    padding: 5rem 7.5rem 0rem 7.5rem;
+    padding: 5rem 5.5rem 0rem 10.5rem;
     flex-direction: column;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -531,6 +529,7 @@ header {
     width: 90rem;
     min-width: 75rem;
     max-width: 100rem;
+    padding-left: 10rem;
     flex-direction: column;
     align-items: center;
     gap: 5.0625rem;
@@ -622,7 +621,7 @@ header {
     display: flex;
     width: 90rem;
     height: 37.5625rem;
-    padding: 5rem 7.5rem 0rem 7.5rem;
+    padding: 5rem 5rem 0rem 10.5rem;
     flex-direction: column;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -786,6 +785,7 @@ header {
 #story-seedpod {
     display: flex;
     flex-direction: column;
+    height: 60rem;
     margin-top: 640px;
     align-items: center;
     gap: 2rem;
@@ -804,7 +804,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* margin-bottom: -9vh; */
+    margin-bottom: -9vh;
     justify-content: center;
 }
 
@@ -817,37 +817,19 @@ header {
     line-height: 120%;
     letter-spacing: 0.03rem;
     text-align: center;
+    margin-bottom: -15vh;
 }
 
 #story-card .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5vw;
-    margin-right: 5vw;
     justify-content: center;
     align-items: center;
     width: 100vw;
     overflow: hidden;
     position: relative;
-}
-
-#story-card .card-container:hover {
-    animation-play-state: paused;
-}
-
-#story-card .card-container {
-    display: flex;
-    flex-direction: row;
-    animation: slide 20s linear infinite;
-    will-change: transform;
-    position: relative;
-}
-
-#story-card .card-container .clone {
-    display: flex;
-    flex-direction: row;
-    animation: slide 20s linear infinite;
-    animation-delay: -10s;
+    padding-right: 13vw;
 }
 
 #story-card .card-container .card {
@@ -865,20 +847,26 @@ header {
     border-radius: 1rem;
     background: var(--white);
     box-shadow: 0px 24px 48px -16px rgba(7, 26, 21, 0.42);
-    transition: transform 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    animation-name: slide;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 
 #story-card .card-container .card:hover {
-    transition: transform 0.3s ease-out;
+    animation-play-state: paused;
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
+        /* start off-screen */
     }
 
-    100% {
-        transform: translateX(calc(-300%));
+    50% {
+        transform: translateX(50%);
     }
 }
 
@@ -886,13 +874,29 @@ header {
     display: flex;
     width: 10rem;
     height: 10rem;
-    padding: 0.5rem;
+    padding: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1.5rem;
     border-radius: 3rem;
     background: lightgray 50% / cover no-repeat, #FFF;
+}
+
+#story-card .card-container .card:nth-child(1) img {
+    -webkit-filter: blur(1.2px);
+    filter: blur(1.5px);
+}
+
+#story-card .card-container .card:nth-child(3) img {
+    margin-top: 2.5rem;
+    -webkit-filter: blur(1.2px);
+    filter: blur(1.5px);
+}
+
+#story-card .card-container .card:nth-child(4) img {
+    margin-top: -2.5rem;
 }
 
 #story-card .card-container .card h3 {
@@ -902,14 +906,24 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+    margin: 0;
 }
 
 #story-card .card-container .divide {
     width: 2.5rem;
     height: 0.25rem;
     flex-shrink: 0;
+    margin: 0.5rem 0;
     border-radius: 0.25rem;
     background: var(--jade);
+}
+
+#story-card .card-container .card:nth-child(4) .divide {
+    margin-top: 1.2rem;
+}
+
+#story-card .card-container .card:nth-child(3) p {
+    margin-top: -0.2rem;
 }
 
 #story-card .card-container .card p {
@@ -921,6 +935,7 @@ header {
     line-height: 120%;
     letter-spacing: 0.0275rem;
     text-align: center;
+    margin: 0;
 }
 
 .colon {
