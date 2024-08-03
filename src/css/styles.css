@@ -163,7 +163,7 @@ header {
 #hero h1 {
     color: var(--Grays-Black);
     font-family: "Darker Grotesque", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 800;
     line-height: 90%;
@@ -177,7 +177,7 @@ header {
 #jade {
     color: var(--jade);
     font-family: "Darker Grotesque", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 800;
     line-height: 90%;
@@ -188,19 +188,21 @@ header {
     position: absolute;
     color: var(--grayscale);
     font-family: "Darker Grotesque";
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.015rem;
-    width: 24vw;
-    margin-top: -309px;
+    width: 35vw;
+    margin-top: -215px;
 }
 
 #hero a {
     display: flex;
     position: absolute;
-    margin-top: -14%;
+    margin-top: -85px;
+    font-size: 1.2rem;
+    font-weight: 600;
     height: 2.25rem;
     padding: 1.25rem 1.5rem;
     justify-content: center;
@@ -432,7 +434,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5vw;
-    margin-right: 5vw;
+    margin-right: 10vw;
+    margin-top: -9vh;
     justify-content: center;
     align-items: center;
 }
@@ -533,7 +536,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 5.0625rem;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 #features h2 {
@@ -554,7 +557,7 @@ header {
     gap: 7rem;
     align-self: stretch;
     border-radius: 0.5rem;
-    margin-left: 5%;
+    margin-right: 5vw;
 }
 
 #features .right:nth-of-type(2n) {
@@ -603,6 +606,12 @@ header {
     color: var(--jade);
 }
 
+#features .right .right-side h3,
+p,
+button {
+    margin-right: 3vw;
+}
+
 #features .right .right-side .btn:hover {
     color: var(--pink);
     transform: scale(1.09);
@@ -620,11 +629,10 @@ header {
 #work-seedpod {
     display: flex;
     width: 90rem;
-    height: 37.5625rem;
-    padding: 5rem 5rem 0rem 10.5rem;
+    height: 77rem;
+    padding: 5rem 5rem 7rem 10.5rem;
     flex-direction: column;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 3vw;
     align-items: center;
     gap: 5rem;
     justify-content: space-between;
@@ -786,7 +794,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 60rem;
-    margin-top: 640px;
+    /* padding-top: 150px; */
     align-items: center;
     gap: 2rem;
     margin-left: 5vw;
@@ -956,11 +964,10 @@ header {
 #resource-seedpod {
     display: flex;
     width: 90rem;
-    height: 37.5625rem;
+    height: 65rem;
     padding: 5rem 5rem 0rem 5.5rem;
     flex-direction: column;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
     align-items: center;
     gap: 5rem;
     justify-content: space-between;
@@ -1086,7 +1093,7 @@ header {
     margin-left: 87px;
     margin-top: -45px;
     letter-spacing: 0.07rem;
-    width: 20.5625rem;
+    width: 15rem;
 }
 
 #resource-seedpod #btn {
