@@ -667,6 +667,7 @@ button {
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.03rem;
+    margin-left: 2.5rem;
 }
 
 #work-card,
@@ -1106,21 +1107,24 @@ button {
 
 #resource-seedpod #btn {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    height: 2.25rem;
+    height: 3.25rem;
     padding: 1rem 2rem;
     padding-top: 0.7rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    color: var(--white);
+    outline: none;
+    border: none;
     border-radius: 0.75rem;
-    background: var(--jade);
+    background-color: var(--jade);
     transition: all 0.5s ease-out;
 }
 
 #resource-seedpod #btn:hover {
-    color: var(--foundation-jade);
+    color: var(--grayscale);
 }
 
 #clickable-card1,
@@ -1269,6 +1273,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    color: var(--white);
     border-radius: 0.75rem;
     background: var(--jade);
     transition: all 0.5s ease-out;
@@ -1277,7 +1282,7 @@ button {
 }
 
 #faqs .btn:hover {
-    color: var(--foundation-jade);
+    color: var(--grayscale);
 }
 
 /* Subscribe */
@@ -1503,7 +1508,7 @@ footer {
 }
 
 #footer-links .links ul li a:hover {
-    color: var(--Grays-Black);
+    color: var(--jade);
 }
 
 #divider {
