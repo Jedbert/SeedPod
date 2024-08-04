@@ -129,3 +129,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+// Subscribe
+
+document.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById('submit');
+    const responseMessage = document.getElementById('responseMessage');
+    const emailInput = document.querySelector('input[name="email"]');
+
+    submitButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default anchor tag behavior
+
+      const email = emailInput.value;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+        if (emailPattern.test(email)) {
+            // Display response message
+            responseMessage.textContent = `Thank you for subscribing! We will send updates to ${email}.`;
+            responseMessage.style.display = 'block';
+
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                responseMessage.style.display = 'none';
+            }, 5000);
+        } else {
+            responseMessage.textContent = 'Please enter a valid email address.';
+            responseMessage.style.display = 'block';
+
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                responseMessage.style.display = 'none';
+            }, 5000);
+        }
+    });
+});

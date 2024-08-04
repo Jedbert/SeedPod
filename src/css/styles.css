@@ -19,6 +19,10 @@
     --white: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Darker Grotesque', sans-serif;
     margin: 0;
@@ -211,6 +215,10 @@ header {
     border-radius: 0.75rem;
     background: var(--jade);
     color: var(--foundation-jade);
+}
+
+#hero a>img {
+    margin-top: .27rem;
 }
 
 #hero a:hover {
@@ -1248,6 +1256,7 @@ button {
     font-weight: 700;
     line-height: 120%;
     align-self: stretch;
+    margin-bottom: -7vh;
 }
 
 #faqs .btn {
@@ -1255,7 +1264,8 @@ button {
     font-size: 1.5rem;
     font-weight: 600;
     height: 2.25rem;
-    padding: 1rem 2rem;
+    padding: 0.2rem 1rem;
+    padding-bottom: .5rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -1263,8 +1273,252 @@ button {
     background: var(--jade);
     transition: all 0.5s ease-out;
     text-decoration: none;
+    margin-top: -7vh;
 }
 
 #faqs .btn:hover {
     color: var(--foundation-jade);
+}
+
+/* Subscribe */
+#call-to-action {
+    display: flex;
+    width: 75vw;
+    padding: 3rem 3.5rem;
+    margin-top: 15vh;
+    margin-left: 12.5vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, #00A878 0%, #009067 100%);
+}
+
+#call-to-action h3 {
+    color: var(--white);
+    font-family: "Darker Grotesque";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    align-self: stretch;
+    /* margin-top: -3vh; */
+    margin-bottom: 3vh;
+}
+
+#call-to-action .action {
+    display: flex;
+    justify-content: space-between;
+}
+
+#call-to-action p {
+    color: var(--white);
+    font-family: "Darker Grotesque";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.025rem;
+    width: 55vw;
+    margin-right: 7.15vw;
+}
+
+#call-to-action a {
+    display: flex;
+    height: 2.25rem;
+    padding: 1.25rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--white);
+    width: 5.5vw;
+    text-decoration: none;
+    color: var(--jade);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#call-to-action a:hover {
+    color: var(--Grays-Black);
+}
+
+#call-to-action a>img {
+    margin-top: .27rem;
+}
+
+#call-to-action a>img:hover {
+    background-image: url('../../node_modules/bootstrap-icons/icons/arrow-right-short.svg');
+}
+
+/* Newsletter */
+
+#newsletter {
+    display: flex;
+    width: 75vw;
+    padding: 3rem 3.5rem;
+    margin-top: 10vh;
+    margin-left: 12.5vw;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+#newsletter h2 {
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+#newsletter p {
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: 40rem;
+    margin-left: 2vw;
+}
+
+#newsletter .mail {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+#newsletter .mail input {
+    display: flex;
+    width: 22.5rem;
+    height: 2.75rem;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+    background: #FFF;
+    box-shadow: 0px 16px 40px -2px rgba(90, 122, 90, 0.20);
+}
+
+#submit {
+    display: flex;
+    height: 2.75rem;
+    padding: 1rem 2rem;
+    padding-top: 0.95rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--jade);
+    color: var(--white);
+    font-family: "Darker Grotesque";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0275rem;
+    width: 6vw;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: var(--Grays-Black);
+}
+
+#responseMessage {
+    color: var(--teal);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: var(--dark-jade);
+}
+
+#footer-logo a img {
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+#footer-logo a img:hover {
+    opacity: 150;
+    filter: contrast(150%);
+    transform: scale(1.1);
+}
+
+#footer-logo p {
+    color: var(--white);
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#footer-links .links ul li {
+    list-style: none;
+}
+
+#footer-links .links ul li a {
+    color: var(--white);
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.01375rem;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+#footer-links .links ul li a:hover {
+    color: var(--Grays-Black);
+}
+
+#divider {
+    height: 0.0875rem;
+    align-self: stretch;
+    background: var(--foundation-jade);
+}
+
+#copyright p {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    flex: 1 0 0;
 }
