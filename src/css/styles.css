@@ -682,7 +682,7 @@ button {
 #work-card .card,
 #work .card {
     display: flex;
-    height: 20.25rem;
+    height: 21.55rem;
     width: 25rem;
     min-width: 17.5rem;
     max-width: 43.5rem;
@@ -1513,7 +1513,7 @@ footer {
 }
 
 #copyright p {
-    color: var(--White, #FFF);
+    color: var(--white);
     text-align: center;
     font-family: "Darker Grotesque";
     font-size: 1.25rem;
