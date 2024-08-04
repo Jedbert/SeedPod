@@ -84,7 +84,7 @@ function updateCurrentDate() {
 
    // Function to open a URL in a new tab/window
         function openInNewTab(url) {
-            const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+            const newTab = window.open(url, '_blank', 'noopener, noreferrer');
             if (newTab) newTab.opener = null; // Ensure security
         }
 
@@ -103,3 +103,17 @@ function updateCurrentDate() {
         document.getElementById('clickable-card3').addEventListener('click', function () {
             openInNewTab('https://www.linkedin.com/in/jed-a-o/');
         });
+
+
+// Toggle Button
+function openclose() {
+  document.querySelectorAll('.open-close-button').forEach(button => {
+    button.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  openclose();
+});
