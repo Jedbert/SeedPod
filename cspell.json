@@ -7,21 +7,29 @@
     ],
     "words": [
         "Adekunle",
+        "adipiscing",
+        "amet",
+        "auctor",
         "AVCA",
         "Ayobamidele",
         "Bamidele",
         "compat",
+        "consectetur",
+        "convallis",
         "Divs",
+        "elit",
         "GBEFLA",
         "noopener",
         "noreferrer",
+        "nulla",
         "Olugbenga",
         "openclose",
         "Pitchdeck",
         "signup",
         "slidein",
         "smokyblack",
-        "techstars"
+        "techstars",
+        "vestibulum"
     ],
     "ignoreWords": [
         "backdrop-filter"

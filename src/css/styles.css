@@ -965,7 +965,7 @@ button {
     display: flex;
     width: 90rem;
     height: 65rem;
-    padding: 5rem 5rem 0rem 5.5rem;
+    padding: 5rem 5rem 0rem 9rem;
     flex-direction: column;
     margin-left: 2.5vw;
     align-items: center;
@@ -1098,8 +1098,11 @@ button {
 
 #resource-seedpod #btn {
     display: flex;
-    height: 3.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 2.25rem;
     padding: 1rem 2rem;
+    padding-top: 0.7rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -1122,9 +1125,9 @@ button {
 
 #faqs {
     display: flex;
-    width: 45rem;
+    width: 65rem;
     max-width: 55rem;
-    margin-left: 25vw;
+    margin-left: 21.5vw;
     padding-top: 10vh;
     flex-direction: column;
     align-items: center;
@@ -1155,29 +1158,19 @@ button {
     letter-spacing: 0.0125rem;
 }
 
-/* #faq-questions ul li {
+#faq-questions label {
     display: flex;
-    gap: 5.5rem;
-    padding: 5em 1.5rem;
-} */
-
-#faqs #faq-questions ul li {
-    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 3.75rem;
+    width: 55vw;
     padding: 1rem 1.5rem;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     gap: 1.5vh;
-    align-self: stretch;
+    margin-bottom: 3.5vh;
     border-radius: 0.75rem;
     background: var(--white);
     box-shadow: 0px 16px 40px -2px rgba(98, 121, 98, 0.12);
-    list-style: none;
-}
-
-#faqs #faq-questions ul li {
-    display: flex;
-    flex: 1 0 0;
     font-family: "Darker Grotesque";
     font-size: 1.375rem;
     font-style: normal;
@@ -1185,46 +1178,41 @@ button {
     line-height: 120%;
     letter-spacing: 0.01375rem;
     text-align: left;
-    justify-content: space-between;
 }
 
-/* #faq-questions ul li .open-close-button {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .open-close-button {
-    display: flex;
-    justify-content: space-between;
-    width: 0.5em;
-    height: 0.5em;
-    /* margin: 2em 45%; */
-    font-size: 3.5em;
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    font-size: 1.5em;
     border-radius: 50%;
+    position: relative;
     transition: all 0.5s;
     transform: translateZ(0);
 }
 
 .open-close-button:before {
     content: "";
-    display: flex;
+    display: block;
     position: absolute;
     background-color: #00A878;
     width: 80%;
-    height: 6%;
+    height: 9%;
     left: 10%;
     top: 47%;
+    border-radius: 1em;
 }
 
 .open-close-button:after {
     content: "";
-    display: flex;
+    display: block;
     position: absolute;
     background-color: #00A878;
-    width: 6%;
+    width: 9%;
     height: 80%;
     left: 47%;
     top: 10%;
+    border-radius: 1em;
 }
 
 .open-close-button.open {
@@ -1241,4 +1229,42 @@ button {
 
 .open-close-button.open {
     transform: rotate(225deg);
+}
+
+.content {
+    display: none;
+}
+
+.content.open {
+    display: block;
+}
+
+#faqs h3 {
+    color: var(--Grays-Black);
+    text-align: center;
+    font-family: "Darker Grotesque";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    align-self: stretch;
+}
+
+#faqs .btn {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 2.25rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--jade);
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+}
+
+#faqs .btn:hover {
+    color: var(--foundation-jade);
 }

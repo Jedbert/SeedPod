@@ -106,14 +106,26 @@ function updateCurrentDate() {
 
 
 // Toggle Button
-function openclose() {
-  document.querySelectorAll('.open-close-button').forEach(button => {
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all the open-close buttons
+  const openCloseButtons = document.querySelectorAll('.open-close-button');
+
+  // Add an event listener to each open-close button
+  openCloseButtons.forEach((button) => {
     button.addEventListener('click', function() {
-      this.classList.toggle('open');
+      // Get the corresponding paragraph element
+      const paragraphId = button.getAttribute('data-target');
+      const paragraph = document.getElementById(paragraphId);
+
+      // Toggle the open class on the button
+      button.classList.toggle('open');
+
+      // Show or hide the paragraph based on the button's state
+      if (button.classList.contains('open')) {
+        paragraph.style.display = 'block';
+      } else {
+        paragraph.style.display = 'none';
+      }
     });
   });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  openclose();
 });
