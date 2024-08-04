@@ -1047,7 +1047,7 @@ button {
 #resource-card .card p {
     color: var(--Grays-Black);
     font-family: "Darker Grotesque";
-    font-size: 1.1em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -1122,15 +1122,18 @@ button {
 
 #faqs {
     display: flex;
-    min-width: 45rem;
+    width: 45rem;
     max-width: 55rem;
+    margin-left: 25vw;
+    padding-top: 10vh;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     align-self: stretch;
+    justify-content: space-between;
 }
 
-#faqs h3 {
+#faqs h2 {
     color: var(--Grays-Black);
     text-align: center;
     font-family: "Darker Grotesque", sans-serif;
@@ -1138,6 +1141,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    margin-bottom: -5vh;
 }
 
 #faqs p {
@@ -1151,21 +1155,27 @@ button {
     letter-spacing: 0.0125rem;
 }
 
-#faq-questions .questions {
+/* #faq-questions ul li {
+    display: flex;
+    gap: 5.5rem;
+    padding: 5em 1.5rem;
+} */
+
+#faqs #faq-questions ul li {
     display: flex;
     height: 3.75rem;
     padding: 1rem 1.5rem;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
-    justify-content: space-between;
+    gap: 1.5vh;
     align-self: stretch;
     border-radius: 0.75rem;
     background: var(--white);
     box-shadow: 0px 16px 40px -2px rgba(98, 121, 98, 0.12);
+    list-style: none;
 }
 
-#faq-questions .questions {
+#faqs #faq-questions ul li {
     display: flex;
     flex: 1 0 0;
     font-family: "Darker Grotesque";
@@ -1178,6 +1188,11 @@ button {
     justify-content: space-between;
 }
 
+/* #faq-questions ul li .open-close-button {
+    display: flex;
+    justify-content: space-between;
+} */
+
 .open-close-button {
     display: flex;
     justify-content: space-between;
@@ -1186,7 +1201,6 @@ button {
     /* margin: 2em 45%; */
     font-size: 3.5em;
     border-radius: 50%;
-    /* position: relative; */
     transition: all 0.5s;
     transform: translateZ(0);
 }
@@ -1195,7 +1209,7 @@ button {
     content: "";
     display: flex;
     position: absolute;
-    background-color: #66ffd9;
+    background-color: #00A878;
     width: 80%;
     height: 6%;
     left: 10%;
@@ -1206,7 +1220,7 @@ button {
     content: "";
     display: flex;
     position: absolute;
-    background-color: #66ffd9;
+    background-color: #00A878;
     width: 6%;
     height: 80%;
     left: 47%;
@@ -1214,15 +1228,15 @@ button {
 }
 
 .open-close-button.open {
-    background-color: #66ffd9;
+    background-color: #00A878;
 }
 
 .open-close-button.open:after {
-    background-color: #00A878;
+    background-color: #66ffd9;
 }
 
 .open-close-button.open:before {
-    background-color: #00A878;
+    background-color: #66ffd9;
 }
 
 .open-close-button.open {
