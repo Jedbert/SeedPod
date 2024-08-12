@@ -1,95 +1,129 @@
-/* Media Query
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    body {
-        width: 100vw;
-    }
+ /* Media Query */
+ /* @media (min-width: 1400px) {
+     body {
+         width: 100vw;
+         margin: 0 auto;
+         padding: auto;
+     }
 
-    header {
-        padding: 1rem 10rem;
-    }
+     header {
+         padding: 1rem 10rem;
+     }
 
-    #hero {
-        padding: 0rem 10rem;
-        height: 107vh;
-    }
+     #hero {
+         padding: 0rem 10rem;
+         height: 107vh;
+     }
 
-    #hero h1 {
-        font-size: 3rem;
-        width: 50%;
-        margin-top: 15vh;
-    }
+     #hero h1 {
+         font-size: 3rem;
+         width: 50%;
+         margin-top: 15vh;
+     }
 
-    #hero p {
-        margin-top: -11%;
-        width: 23%;
-    }
+     #hero p {
+         margin-top: -11%;
+         width: 23%;
+     }
 
-    #hero a {
-        margin-top: -3%;
-    }
+     #hero a {
+         margin-top: -3%;
+     }
 
-    #image {
-        width: 40vw;
-        margin-top: 5%;
-        margin-left: 50vw;
-    }
+     #image {
+         width: 40vw;
+         margin-top: 5%;
+         margin-left: 50vw;
+     }
 
-    #idea {
-        position: absolute;
-        width: 5vw;
-        margin-top: -13vh;
-        margin-left: 13vw;
-    }
+     #idea {
+         position: absolute;
+         width: 5vw;
+         margin-top: -13vh;
+         margin-left: 13vw;
+     }
 
-    #idea p {
-        margin-top: -0.4vh;
-        font-size: 1rem;
-        width: 10vw;
-    }
+     #idea p {
+         margin-top: -0.4vh;
+         font-size: 1rem;
+         width: 10vw;
+     }
 
-    #valuation {
-        position: absolute;
-        width: 5vw;
-        margin-top: 7vh;
-        margin-left: 24.5vw;
-    }
+     #valuation {
+         position: absolute;
+         width: 5vw;
+         margin-top: 7vh;
+         margin-left: 24.5vw;
+     }
 
-    #invest {
-        position: absolute;
-        width: 5vw;
-        margin-top: 40vh;
-    }
+     #invest {
+         position: absolute;
+         width: 5vw;
+         margin-top: 40vh;
+     }
 
-    #invest p {
-        margin-top: -15vh;
-        font-size: 1rem;
-        width: 7.5vw;
-    }
+     #invest p {
+         margin-top: -15vh;
+         font-size: 1rem;
+         width: 7.5vw;
+     }
 
-    #implement {
-        position: absolute;
-        width: 5vw;
-        margin-top: 42vh;
-    }
+     #implement {
+         position: absolute;
+         width: 5vw;
+         margin-top: 42vh;
+     }
 
-    #implement p {
-        margin-top: -15vh;
-        font-size: 1rem;
-        width: 9vw;
-    }
+     #implement p {
+         margin-top: -15vh;
+         font-size: 1rem;
+         width: 9vw;
+     }
 
-    #growth p {
-        font-size: 1rem;
-        width: 6vw;
-        margin-top: 2%;
-    }
+     #growth p {
+         font-size: 1rem;
+         width: 6vw;
+         margin-top: 2%;
+     }
 
-    #valuation p {
-        font-size: 1rem;
-        width: 7vw;
-    }
-}
+     #valuation p {
+         font-size: 1rem;
+         width: 7vw;
+     }
 
+     #partners {
+         align-items: center;
+         gap: 5.5px;
+     }
+
+     #about-seedpod {
+         align-items: center;
+         width: 90vw;
+         margin: 0 auto;
+     }
+
+     #card {
+         margin: 0px 80px 0px 0px;
+     }
+
+     #card .about-card {
+         align-items: center;
+         justify-content: center;
+         width: 24rem;
+         height: 405px;
+     }
+
+     #features {
+         margin-bottom: 100px;
+         padding-right: 180px;
+         align-items: center;
+     }
+ } */
+
+
+
+
+ /*
 @media only screen and (min-width: 1441px) and (aspect-ratio: 16/9) {
     header {
         padding: 1rem 10rem;
@@ -177,7 +211,7 @@
     }
 } */
 
-/* @media only screen and (min-width: 1920px) and (aspect-ratio: 16/9) {
+ /* @media only screen and (min-width: 1920px) and (aspect-ratio: 16/9) {
     header {
         display: none;
         padding: 1rem 10rem;
