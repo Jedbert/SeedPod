@@ -410,8 +410,7 @@ header {
     height: 37.5625rem;
     padding: 5rem 5.5rem 0rem 10.5rem;
     flex-direction: column;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
     align-items: center;
     gap: 5rem;
     justify-content: space-between;
@@ -444,7 +443,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5vw;
-    margin-right: 10vw;
+    margin-right: 5vw;
     margin-top: -9vh;
     justify-content: center;
     align-items: center;
