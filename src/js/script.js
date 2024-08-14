@@ -186,3 +186,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.getElementById('mobile-navbar');
+  const navLinks = navbar.querySelectorAll('.nav-link');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      // Do something when a nav link is clicked
+      console.log(`Nav link clicked: ${link.textContent}`);
+    });
+  });
+});

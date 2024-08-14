@@ -43,13 +43,13 @@ header {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    background: #FFF;
+    background: none;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12px);
 }
 
 .logo {
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .logo:hover {
@@ -162,7 +162,6 @@ header {
     align-items: center;
     align-self: stretch;
     background: var(--bg);
-    z-index: 1000;
     position: relative;
 }
 
@@ -1197,6 +1196,10 @@ button {
     text-align: left;
 }
 
+#faq-questions p {
+    width: 44rem;
+}
+
 .open-close-button {
     display: inline-block;
     width: 0.9em;
@@ -1533,3 +1536,66 @@ footer {
     line-height: 100%;
     flex: 1 0 0;
 }
+
+
+/* Mobile Navbar */
+.fixed-top {
+    display: none;
+}
+
+/* #login-button {
+    display: flex;
+    width: 7.5rem;
+    height: 2.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--tints-shade);
+    background: var(--Foundation-Jade-jade-50, #E6F6F2);
+}
+
+#login-button a {
+    color: var(--teal);
+    font-size: 1.25rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.025rem;
+    padding-bottom: 0.5em;
+    transition: all 0.5s ease-out;
+}
+
+#login-button a:hover {
+    color: var(--Grays-Black);
+}
+
+#signup-button {
+    display: flex;
+    width: 7.5rem;
+    height: 2.75rem;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    background: var(--jade);
+}
+
+#signup-button a {
+    color: var(--foundation-jade);
+    font-size: 1.25rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.025rem;
+    padding-bottom: 0.5em;
+    transition: all 0.5s ease-out;
+}
+
+#signup-button a:hover {
+    color: var(--Grays-Black);
+} */
